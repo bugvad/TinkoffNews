@@ -100,7 +100,7 @@ public class NewsActivity extends AppCompatActivity {
 
                     }
                 };
-        
+
         observableLocal.subscribe(observer);
     }
 }

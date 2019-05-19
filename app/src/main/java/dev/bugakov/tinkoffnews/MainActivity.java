@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
             if (c.moveToFirst()) {
 
                 int idColIndex = c.getColumnIndex("idm");
-                int textColIndex = c.getColumnIndex("text");
+                int textColIndex = c.getColumnIndex("title");
                 int timeColIndex = c.getColumnIndex("milliseconds");
 
                 do {
@@ -241,6 +241,8 @@ public class MainActivity extends AppCompatActivity {
             DataAdapter adapterMain = new DataAdapter(MainActivity.this, item);
             adapterMain.notifyDataSetChanged();
             recyclerView.setAdapter(adapterMain);
+
+            c.close();
         }
     }
 
