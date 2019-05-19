@@ -82,7 +82,6 @@ public class NewsActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     textView.setText(String.valueOf(Html.fromHtml(text)));
-
                                 }
                             });
                         } catch (JSONException e) {

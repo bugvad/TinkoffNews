@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
-        super(context, "myTable", null, 4);
+        super(context, "myTable", null, 5);
     }
 
     //БД для кеширования
@@ -17,7 +17,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 + "id integer primary key autoincrement,"
                 + "idm integer,"
                 + "title text,"
-                + "milliseconds long" + ");");
+                + "milliseconds long,"
+                + "content text" + ");");
     }
 
     @Override
