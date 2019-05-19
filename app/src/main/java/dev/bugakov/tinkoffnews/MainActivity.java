@@ -110,6 +110,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Загрузка...", Toast.LENGTH_SHORT);
+            toast.show();
+
             Observable<String> observableLocal =
                     Observable.create(subscriber -> {
                         URL url = new URL("https://api.tinkoff.ru/v1/news");
